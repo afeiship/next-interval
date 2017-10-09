@@ -2,7 +2,15 @@
 > Interval for next.
 
 
-## resources:
+## usage:
+```js
+import 'next-interval';
 
-## todos:
-- [ ] unit test case
+// create interval resource:
+var res = nx.interval(()=>{
+  console.log('delay 1s')
+},1000);
+
+// destroy resource:
+res.destroy();
+```
